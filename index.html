@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;How to Swim in Grass 🏊‍♂️🌾&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="A playful single-page website teaching the whimsical art of grass-swimming—with tips, drills, and a gentle wink to real safety."/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #0b1220;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-2: #0e172f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #e6edf3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted: #a3b3c3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--brand: #5eead4; /* teal */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #a78bfa; /* purple */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card: #111827;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ring: rgba(94, 234, 212, 0.35);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--grass1: #1b5e20;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--grass2: #2e7d32;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--sun: #ffd166;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (prefers-color-scheme: light) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--bg: #f7fbff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--bg-2: #f0f6ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--text: #0b1220;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--muted: #4b5563;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--card: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--ring: rgba(167, 139, 250, 0.25);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 55%, #102a43 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Header / Hero */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header.hero {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 80svh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>place-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4rem 1rem 10rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>isolation: isolate;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sky {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(ellipse at 70% 15%, rgba(255, 209, 102, 0.12), transparent 40%),</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>radial-gradient(ellipse at 15% -20%, rgba(167, 139, 250, 0.15), transparent 45%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: -2;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sun {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 6%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 8%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: clamp(60px, 10vw, 120px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>aspect-ratio: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at 30% 30%, #fff3bf, var(--sun));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: blur(0.5px) drop-shadow(0 0 10px rgba(255,209,102,0.4));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: .9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(2rem, 5vw, 4rem);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 .5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -0.02em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.lead {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 70ch;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-row {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: .75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bgc: var(--brand);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--fgc: #0b1220;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bgc);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--fgc);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: .8rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform .15s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 6px 18px -6px var(--ring);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover { transform: translateY(-2px); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:active { transform: translateY(0); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.alt {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bgc: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--fgc: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid color-mix(in oklab, var(--accent) 60%, transparent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.toggle {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 1rem; right: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 50;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: .45rem .75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; gap: .5rem; align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 30px -12px rgba(0,0,0,.45);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Navigation */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav.local {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: sticky; top: 0; z-index: 40;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: saturate(150%) blur(8px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: color-mix(in oklab, var(--card), transparent 30%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid rgba(255,255,255,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navwrap { display: flex; gap: 1rem; padding: .75rem 1rem; overflow-x: auto; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navwrap a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: .35rem .75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: background .2s ease, color .2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navwrap a:hover, .navwrap a[aria-current="page"] { background: rgba(167,139,250,.15); color: var(--text); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Sections */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrap {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 20px 40px -30px rgba(0,0,0,.6);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.kicker {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: .8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: .12em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Steps */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>ol.steps {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>counter-reset: step;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid; gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>list-style: none; padding: 0; margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>ol.steps li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem 1rem 1rem 3.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px dashed rgba(255,255,255,.10);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>ol.steps li::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>counter-increment: step; content: counter(step);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute; left: 1rem; top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 2rem; height: 2rem; display: grid; place-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%; font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: color-mix(in oklab, var(--brand) 70%, transparent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #0b1220;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 6px 12px -6px var(--ring);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Drills cards */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.drill {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid; gap: .5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badges { display:flex; flex-wrap: wrap; gap:.5rem; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: .25rem .5rem; border-radius: .5rem; font-size: .75rem; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(167,139,250,.15); color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* FAQ */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>details { background: transparent; border: 1px solid rgba(255,255,255,.08); border-radius: .75rem; padding: .75rem 1rem; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>summary { cursor: pointer; font-weight: 700; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Footer + disclaimer */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.disclaimer { color: var(--muted); font-size: .9rem; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Grass foreground */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grass {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute; left: 0; right: 0; bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>repeating-linear-gradient(90deg, transparent 0 14px, rgba(255,255,255,.025) 14px 15px),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(0deg, color-mix(in oklab, var(--grass1) 70%, black) 0%, transparent 70%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: visible;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: -1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.blade {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute; bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 4px; height: var(--h, 70px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, var(--grass2), var(--grass1));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 2px 2px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform-origin: bottom center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: sway calc(6s + var(--d, 0s)) ease-in-out infinite alternate;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: .9;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: drop-shadow(0 8px 8px rgba(0,0,0,.25));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes sway {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0% <span class="Apple-converted-space">  </span>{ transform: rotate(-6deg); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>100% { transform: rotate(6deg); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Swimmer */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.swim-lane {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute; left: 0; right: 0; bottom: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100px; pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.swimmer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute; left: -120px; top: 50%; translate: 0 -50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid; place-items: center; gap: .25rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(28px, 5vw, 48px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: glide 16s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes glide {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0% { transform: translateX(-10vw); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>100% { transform: translateX(110vw); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.swimmer .label { font-size: .8rem; color: var(--muted); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Progress bar */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.progress {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed; inset-block-start: 0; inset-inline: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 3px; background: linear-gradient(90deg, var(--brand), var(--accent));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform-origin: 0 50%; transform: scaleX(0);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 60;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Quiz modal */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-backdrop {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed; inset: 0; z-index: 70;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none; place-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0,0,0,.5);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: min(92vw, 560px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card); color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,.08);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 1rem; padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 30px 80px -30px rgba(0,0,0,.7);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal header { display:flex; justify-content:space-between; align-items:center; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal h3 { margin: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal .actions { display:flex; gap:.5rem; justify-content:flex-end; margin-top: .5rem; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Reduced motion */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (prefers-reduced-motion: reduce) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>* { animation: none !important; transition: none !important; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="progress" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button class="toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;🌗&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Theme&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="hero" id="top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sky" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sun" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;How to Swim in Grass&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="lead"&gt;Ever wished you could freestyle through a meadow? This whimsical guide turns lawn-time into a (mostly) dry swim clinic—complete with techniques, drills, and safety tips. Bring curiosity; leave with elite &lt;em&gt;grassstroke&lt;/em&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cta-row" role="group" aria-label="quick actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="btn" href="#steps"&gt;Start Learning&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn alt" id="practice"&gt;Practice Mode&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn alt" id="openQuiz"&gt;Quick Quiz&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Animated grass and swimmer foreground --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="swim-lane" aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="swimmer" id="swimmer" aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;🏊‍♂️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="label"&gt;grassstroke in progress…&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grass" id="grass" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="local" aria-label="Section navigation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="navwrap wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#steps"&gt;Steps&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#technique"&gt;Technique&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#drills"&gt;Drills&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#gear"&gt;(Im)Practical Gear&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#faq"&gt;FAQ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="kicker"&gt;Step-by-step&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;From Dew Rookie to Meadow Master&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ol class="steps" id="stepList"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Scout your turf.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Find soft, even grass free of hazards. Your lawn, a park, or a field with permission. Bonus points for morning dew—nature’s lane lubricant.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Warm up the joints.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Neck rolls, shoulder circles, hip hinges. Think &lt;em&gt;mobility first&lt;/em&gt;—you’ll glide better when your body’s a bit springy.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Choose your stroke.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;em&gt;Freelawn&lt;/em&gt; (freestyle), &lt;em&gt;breastbloom&lt;/em&gt; (breaststroke), or the advanced &lt;em&gt;butterbur&lt;/em&gt; (butterfly). Start slow; respect the shrub.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Low drag posture.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Hinge slightly, core tight, chin neutral. Imagine the grass is thick water—you’re slicing, not stomping.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Kicks, not steps.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Brush the toes through the blades in small, quick kicks. Quiet feet = smooth flow. No lawnmower energy.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Pull and recover.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Sweep hands just above the grass, then recover forward. Keep wrists relaxed so blades can part gracefully.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Breathe with the breeze.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Inhale when the wind (or your turn) faces away; exhale when you dip towards the stems. Sync breath to rhythm.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Finish with a glide.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;After each pull, float the arms to feel momentum. Celebrate with a victory roll in clover.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="technique"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wrap grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="kicker"&gt;Form cues&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Technique Checklist&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Head still; eyes soft-focus 2–3 meters ahead.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Shoulders down &amp; back—no shrugging into the weeds.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Elbows high on the catch; the grass will part.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Light toe flicks; keep ankles floppy.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Exhale slowly through pursed lips; smile optional but recommended.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="kicker"&gt;Common oops&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Lawn-Order Violations&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Marching. If you hear thuds, you’re walking—not swimming.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Rigid wrists creating clumps. Stay fluid.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Holding breath. The meadow is forgiving; your lungs should be too.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Ignor</p>
+</body>
+</html>
